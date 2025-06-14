@@ -50,7 +50,7 @@ The model achieved the following evaluation metrics on the test set:
 ## 🧠 Model Training
 To retrain the model or test with your own dataset, open the Google Colab notebook below:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing)
+[[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]](https://colab.research.google.com/drive/1ieeFhPXQM1vlxC0uVYnuiX_Gzjvqpaiq?usp=sharing)
 
 ## 📁 Project Structure
 
