@@ -37,12 +37,6 @@ The model achieved the following evaluation metrics on the test set:
 - Flask (for frontend integration)
 - Matplotlib (for visualization)
 
-## 🗂 Dataset
-
-The dataset was sourced from Kaggle, containing labeled AI-generated and real images. Unfortunately, the exact dataset URL is no longer available.
-
-
-
 ## 🧪 How It Works
 
 1. User uploads an image via frontend.
@@ -55,7 +49,7 @@ The dataset was sourced from Kaggle, containing labeled AI-generated and real im
 ## 🧠 Model Training
 To retrain the model or test with your own dataset, use the Google Colab notebook below:
 
-👉 Open in Google Colab ← ([Replace with actual link](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing))
+👉 Open in Google Colab ← ([link](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing))
 
 ## 🗂 Project Structure
 AI-Image-Classification/
@@ -75,9 +69,7 @@ AI-Image-Classification/
 │   └── metrics.png
 └── README.md
 
-📌 Future Improvements
-Use larger datasets with more diversity and resolution.
-
-Fine-tune model using pre-trained architectures (e.g., ResNet, EfficientNet).
-
-Add adversarial image detection features.
+## 📌 Future Improvements
+1. Use larger datasets with more diversity and resolution.
+2. Fine-tune model using pre-trained architectures (e.g., ResNet, EfficientNet).
+3. Add adversarial image detection features.
