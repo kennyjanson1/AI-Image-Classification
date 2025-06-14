@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #646cff;
+  --primary-dark: #535bf2;
+  --secondary-color: #ff64c6;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --neutral-dark: #0a0a20;
+  --neutral-light: #1a1a2a;
+  --text-light: #ffffff;
+  --text-dark: #333333; 
+  --font-color: #575790;
+  --bg-color: #ffffff;
+  --primary-color: #3b82f6;
+  --secondary-color: #f3f4f6;
+  --accent-color: #10b981;
+  --danger-color: #ef4444;
+  --scan-line-color: rgba(0, 255, 255, 0.8);
+  --dot-color: #201e30;
+  --corner-color: #111;
+  --about-color: #000000;
+  --about-font-color: #ffffff;
+}
+
+html[data-theme='dark'],
+.dark {
+  --font-color: #ddd;
+  --bg-color: #201e30;
+  --primary-color: #3b82f6;
+  --secondary-color: #1e1e1e;
+  --accent-color: #10b981;
+  --danger-color: #ef4444;
+  --scan-line-color: rgba(0, 255, 180, 0.7);
+  --dot-color: #fff ;
+  --corner-color: #eee;
+  --about-color: #f5f5f5;
+  --about-font-color: #000000;
+}
+
+
+/* Tombol utama */
+.theme-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  left: 95%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.theme-toggle-button.animating {
+  animation: popUp 0.2s ease forwards;
+}
+
+.theme-toggle-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transition: filter 0.3s ease;
+}
+
+.theme-toggle-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+
+/* Efek transisi layar */
+.theme-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: var(--bg-color);
+  opacity: 0.6;
+  animation: fadeOut 0.5s forwards ease-in-out;
+  z-index: 9999;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}

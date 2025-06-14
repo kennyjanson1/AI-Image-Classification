@@ -1,0 +1,99 @@
+/* Navbar styles */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: none;
+  background:#fff;
+  /* linear-gradient(to right, #fff, #a2a2d0);*/
+  color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 60px;
+  align-items: center;
+  background: #575790;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-center-menu {
+  background: transparent;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 0.7rem 2rem;
+  list-style: none;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* List item */
+.nav-center-menu li {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button dasar */
+.nav-center-menu li button {
+  position: relative;
+  z-index: 1;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #575790;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+/* Hover efek */
+.nav-center-menu li button:hover,
+.nav-center-menu li button:active {
+  letter-spacing: 5px;
+}
+
+/* Efek garis atas & bawah */
+.nav-center-menu li button::after,
+.nav-center-menu li button::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #575790;
+  transition: all 280ms ease-in-out;
+}
+
+.nav-center-menu li button::before {
+  top: 0;
+}
+
+.nav-center-menu li button::after {
+  bottom: 0;
+}
+
+.nav-center-menu li button:hover::before,
+.nav-center-menu li button:hover::after {
+  width: 100%;
+  transition: width 350ms ease-in-out;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
