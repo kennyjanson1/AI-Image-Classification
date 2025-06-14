@@ -57,6 +57,7 @@ To retrain the model or test with your own dataset, use the Google Colab noteboo
 
 👉 Open in Google Colab ← ([Replace with actual link](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing))
 
+## 🗂 Project Structure
 AI-Image-Classification/
 ├── backend/                  # Flask app and model inference
 │   ├── app.py
