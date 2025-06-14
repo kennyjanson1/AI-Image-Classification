@@ -17,14 +17,14 @@ The model achieved the following evaluation metrics on the test set:
 - **Accuracy:** 79.68%
 
 <p align="center">
-  <img src="performance/metrics.png" width="400">
+  <img src="performance/metrics.jpg" width="400">
 </p>
 
 ### Loss & Accuracy During Training
 
 <p float="left">
-  <img src="performance/loss.png" width="300" />
-  <img src="performance/accuracy.png" width="300" />
+  <img src="performance/loss.jpg" width="300" />
+  <img src="performance/accuracy.jpg" width="300" />
 </p>
 
 > Note: Due to limited data (~1,085 samples), the model's performance is moderate. Higher accuracy could be achieved with larger datasets, but high-resolution AI/real images require significant memory (11–20GB).
@@ -41,22 +41,38 @@ The model achieved the following evaluation metrics on the test set:
 
 The dataset was sourced from Kaggle, containing labeled AI-generated and real images. Unfortunately, the exact dataset URL is no longer available.
 
+
+
 ## 🧪 How It Works
 
-1. All images are resized to 32x32 pixels and normalized.
-2. A 3-layer CNN is trained using binary crossentropy loss.
-3. Users can upload an image, and the model predicts its class:
+1. User uploads an image via frontend.
+2. Image is resized to 32x32 pixels and normalized.
+3. The pre-trained CNN model (.h5 file) makes a prediction.
+4. The model predicts its class:
    - Output > 0.5 → **REAL**
    - Output ≤ 0.5 → **FAKE (AI-generated)**
 
-## 👥 Team Contributions
+## 🧠 Model Training
+To retrain the model or test with your own dataset, use the Google Colab notebook below:
 
-- **Model Training & Dataset Preparation:** Teammate
-- **Frontend Development & Flask Integration:** Kenny Janson (me)
+👉 Open in Google Colab ← ([Replace with actual link](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing))
 
-## 💾 Model Export
-
-Trained model is saved as:
+AI-Image-Classification/
+├── backend/                  # Flask app and model inference
+│   ├── app.py
+│   └── train(colab).py
+│   └── ai_imageclassifier.h5
+├── dataset/                  # Dataset (REAL / FAKE)
+│   ├── REAL/
+│   └── FAKE/
+├── frontend/                 # React
+│   ├── public/
+│   └── src/
+├── performance/              # Training result visualizations
+│   ├── loss.png
+│   ├── accuracy.png
+│   └── metrics.png
+└── README.md
 
 📌 Future Improvements
 Use larger datasets with more diversity and resolution.
