@@ -53,11 +53,15 @@ To retrain the model or test with your own dataset, use the Google Colab noteboo
 
 ## 🗂 Project Structure
 AI-Image-Classification/
+
 ├── backend/                  # Flask app and model inference
 
 │   ├── app.py
+
 │   └── train(colab).py
+
 │   └── ai_imageclassifier.h5
+
 ├── dataset/                  # Dataset (REAL / FAKE)
 │   ├── REAL/
 │   └── FAKE/
