@@ -52,27 +52,17 @@ To retrain the model or test with your own dataset, use the Google Colab noteboo
 👉 ([link](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing))
 
 ## 🗂 Project Structure
-AI-Image-Classification/
 
-├── backend/                  # Flask app and model inference
-
-│   ├── app.py
-
-│   └── train(colab).py
-
-│   └── ai_imageclassifier.h5
-
-├── dataset/                  # Dataset (REAL / FAKE)
-│   ├── REAL/
-│   └── FAKE/
-├── frontend/                 # React
+language-classification/
+├── frontend/            # React frontend
 │   ├── public/
 │   └── src/
-├── performance/              # Training result visualizations
-│   ├── loss.png
-│   ├── accuracy.png
-│   └── metrics.png
+├── backend/             # Flask backend
+│   ├── app.py
+│   └── model/
+├── model_training/      # Colab notebook for training
 └── README.md
+
 
 ## 📌 Future Improvements
 1. Use larger datasets with more diversity and resolution.
