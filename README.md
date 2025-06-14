@@ -47,28 +47,31 @@ The model achieved the following evaluation metrics on the test set:
    - Output ≤ 0.5 → **FAKE (AI-generated)**
 
 ## 🧠 Model Training
-To retrain the model or test with your own dataset, use the Google Colab notebook below:
+To retrain the model or test with your own dataset, open the Google Colab notebook below:
 
-👉 ([link](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing)
 
-## 🗂 Project Structure
+## 📁 Project Structure
 
-AI-Image-Classification/ 
-├── backend/                  # Flask app and model inference
+```bash
+AI-Image-Classification/
+├── backend/                # Flask app and model inference
 │   ├── app.py
-│   └── train(colab).py
+│   ├── train(colab).py
 │   └── ai_imageclassifier.h5
-├── dataset/                  # Dataset (REAL / FAKE)
+├── dataset/                # Dataset (REAL / FAKE)
 │   ├── REAL/
 │   └── FAKE/
-├── frontend/                 # React
+├── frontend/               # React frontend
 │   ├── public/
 │   └── src/
-├── performance/              # Training result visualizations
+├── performance/            # Training result visualizations
 │   ├── loss.png
 │   ├── accuracy.png
 │   └── metrics.png
 └── README.md
+```
+
 
 ## 📌 Future Improvements
 1. Use larger datasets with more diversity and resolution.
