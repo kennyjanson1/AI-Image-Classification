@@ -53,7 +53,7 @@ To retrain the model or test with your own dataset, use the Google Colab noteboo
 
 ## 🗂 Project Structure
 
-AI-Image-Classification/ \n
+AI-Image-Classification/ /n
 ├── backend/                  # Flask app and model inference
 │   ├── app.py
 │   └── train(colab).py
