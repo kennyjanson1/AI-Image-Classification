@@ -53,7 +53,7 @@ To retrain the model or test with your own dataset, use the Google Colab noteboo
 
 ## 🗂 Project Structure
 
-AI-Image-Classification/ /n
+AI-Image-Classification/ 
 ├── backend/                  # Flask app and model inference
 │   ├── app.py
 │   └── train(colab).py
@@ -69,7 +69,6 @@ AI-Image-Classification/ /n
 │   ├── accuracy.png
 │   └── metrics.png
 └── README.md
-
 
 ## 📌 Future Improvements
 1. Use larger datasets with more diversity and resolution.
