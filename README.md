@@ -57,3 +57,10 @@ The dataset was sourced from Kaggle, containing labeled AI-generated and real im
 ## 💾 Model Export
 
 Trained model is saved as:
+
+📌 Future Improvements
+Use larger datasets with more diversity and resolution.
+
+Fine-tune model using pre-trained architectures (e.g., ResNet, EfficientNet).
+
+Add adversarial image detection features.
