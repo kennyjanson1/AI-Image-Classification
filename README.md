@@ -29,13 +29,14 @@ The model achieved the following evaluation metrics on the test set:
 
 > Note: Due to limited data (~1,085 samples), the model's performance is moderate. Higher accuracy could be achieved with larger datasets, but high-resolution AI/real images require significant memory (11–20GB).
 
-## 🧠 Technologies Used
+## 🧩 Tech Stack
 
-- Python
-- TensorFlow / Keras
-- OpenCV
-- Flask (for frontend integration)
-- Matplotlib (for visualization)
+| Layer      | Tech                          |
+|------------|-------------------------------|
+| Frontend   | React                         |
+| Backend    | Python + Flask                |
+| Model      | CNN (Convolutional Neural Net)|
+| Deployment | Localhost / Google Colab      |
 
 ## 🧪 How It Works
 
