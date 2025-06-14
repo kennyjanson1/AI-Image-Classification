@@ -49,11 +49,12 @@ The model achieved the following evaluation metrics on the test set:
 ## 🧠 Model Training
 To retrain the model or test with your own dataset, use the Google Colab notebook below:
 
-👉 Open in Google Colab ← ([link](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing))
+👉 ([link](https://drive.google.com/file/d/1_c1op6PmpNtQExVVhEgGBJtlegPplhql/view?usp=sharing))
 
 ## 🗂 Project Structure
 AI-Image-Classification/
 ├── backend/                  # Flask app and model inference
+
 │   ├── app.py
 │   └── train(colab).py
 │   └── ai_imageclassifier.h5
